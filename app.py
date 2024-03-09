@@ -8,7 +8,7 @@ load_dotenv()
 chat = ChatOpenAI(temperature=0.5,openai_api_key=os.getenv("OPENAI_API_KEY"),model='gpt-3.5-turbo')
 
 st.set_page_config(page_title="Conversational Q&A Chatbot")
-st.header("Hey its Me YATO your Math Teacher, Let's Chat")
+st.header("Hey its your Math Teacher, Let's Chat")
  
 if 'flowmessages' not in st.session_state:
     st.session_state['flowmessages']=[
